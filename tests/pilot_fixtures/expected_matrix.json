@@ -1,0 +1,276 @@
+{
+  "purpose": "Session-04 reviewer-side expectations for the offline pilot fixtures. Never enters any inference prompt. Pilot envelope proposal, NOT spend authorization.",
+  "pilot_limits_envelope": {
+    "max_transmissions": 30,
+    "max_recoveries": 5,
+    "token_reservation": 250000,
+    "spend_ceiling_usd": 2.0,
+    "network_seconds": 600,
+    "finalize_seconds": 750,
+    "overall_seconds": 780
+  },
+  "cases": [
+    {
+      "id": "ACK_VS_DONE",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_hn"
+      ],
+      "expected": "M1/M2: task stays open after the acknowledgement; no closure evidence.",
+      "failure": "task marked done/dropped from an acknowledgement; task missing"
+    },
+    {
+      "id": "NEGATED_CANCEL",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M3/M4: negated cancellation leaves the tuition appointment open (owner P02).",
+      "failure": "loop dropped/done from the negation; owner changed"
+    },
+    {
+      "id": "COMPLETE_THEN_REOPEN",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M7–M9: completion then reopen; final status open, closed_by null.",
+      "failure": "stays done after reopen; closed_by set"
+    },
+    {
+      "id": "OWNER_REASSIGN",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M5/M6: pickup rota owner becomes P01 with evidence M6.",
+      "failure": "owner unchanged; invented owner; owner not in chat"
+    },
+    {
+      "id": "CROSS_CHAT_MATCH",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M15/M16: completion in C_QUOTE matches the C_PAIR task via quoted_id; status done, closed_by M16.",
+      "failure": "no match; match without quoting the origin"
+    },
+    {
+      "id": "UNRELATED_SIMILAR",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M14: wording-similar request resolves ambiguous/none; no status change to other tasks.",
+      "failure": "silent drop; fabricated match on shared words"
+    },
+    {
+      "id": "UNSUPPORTED_GOAL",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M12 (forwarded cousin plan) is rejected, never in goals[]; M10/M11 explicit+pursuit is the single goal.",
+      "failure": "forwarded plan appears in goals[]; more than one goal"
+    },
+    {
+      "id": "REMIND_TIMING",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M1 open loop: help=remind with remind_at 2026-09-26T09:00:00+05:30 (> as_of).",
+      "failure": "remind_at <= as_of; invented vague date"
+    },
+    {
+      "id": "HELP_PERMISSION",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "Pickup rota open loop: help=assist with nonempty next_step and needs_yes=true.",
+      "failure": "missing next_step; needs_yes=false on a consent-gated step"
+    },
+    {
+      "id": "HELP_LEAVE",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "Tuition appointment, reimbursement form and anniversary dinner loops: leave with a nonempty reason.",
+      "failure": "assist/remind where the input supports staying out"
+    },
+    {
+      "id": "SEED_PRESERVATION",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "seed circles P01/P02/P03 and the HomeServe seed organisation survive unchanged.",
+      "failure": "any seed circle or organisation change"
+    },
+    {
+      "id": "AMBIGUOUS_RESOLUTION",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "M14 resolves as ambiguous; pending/unresolved recorded, never silently resolved.",
+      "failure": "silent resolution either way"
+    },
+    {
+      "id": "EVIDENCE_INTEGRITY",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "every window primary span covered exactly once; evidence text equals the source body slice.",
+      "failure": "coverage mismatch; evidence text divergence; offset drift"
+    },
+    {
+      "id": "DETERMINISTIC_OUTPUT",
+      "languages": [
+        "pilot_en",
+        "pilot_hi",
+        "pilot_bn",
+        "pilot_hn"
+      ],
+      "expected": "repeated offline runs produce byte-identical final output.",
+      "failure": "nondeterministic output; ID drift"
+    }
+  ],
+  "pack_expectations": {
+    "people": {
+      "P01": "spouse",
+      "P02": "staff",
+      "P03": "colleague",
+      "P04": "vendor",
+      "P05": "client",
+      "P06": "friend"
+    },
+    "chat_targets": {
+      "C_MAIN": "person:P01",
+      "C_PAIR": "person:P06",
+      "C_QUOTE": "person:P05",
+      "C_ORG": "organisation:single local organisation"
+    },
+    "organisation": {
+      "count": 1,
+      "name_note": "home-services company; surface name is language-dependent (HomeServe / होमसर्व / হোমসার্ভ); id is language-independent"
+    },
+    "current_goal": {
+      "title": "Run a half marathon in January",
+      "area": "health",
+      "type": "milestone",
+      "horizon": "3mo",
+      "evidence": [
+        "M10",
+        "M11"
+      ]
+    },
+    "open_loops": [
+      {
+        "title": "send signed lease copy",
+        "type": "commitment",
+        "owner": "P01",
+        "source_msg": "M1",
+        "status": "open",
+        "closed_by": null,
+        "due": null,
+        "help": {
+          "action": "remind",
+          "remind_at": "2026-09-26T09:00:00+05:30"
+        }
+      },
+      {
+        "title": "confirm tuition trial appointment",
+        "type": "followup",
+        "owner": "P02",
+        "source_msg": "M3",
+        "status": "open",
+        "closed_by": null,
+        "due": "2026-09-23",
+        "help": {
+          "action": "leave",
+          "reason": "School confirmation is pending; stay out until it lands."
+        }
+      },
+      {
+        "title": "coordinate school pickup rota",
+        "type": "commitment",
+        "owner": "P01",
+        "source_msg": "M5",
+        "status": "open",
+        "closed_by": null,
+        "due": null,
+        "help": {
+          "action": "assist",
+          "next_step": "Confirm Monday pickup cover with P01; needs your yes.",
+          "needs_yes": true
+        }
+      },
+      {
+        "title": "submit tuition reimbursement form",
+        "type": "commitment",
+        "owner": "P03",
+        "source_msg": "M7",
+        "status": "open",
+        "closed_by": null,
+        "due": null,
+        "help": {
+          "action": "leave",
+          "reason": "Approval is pending; do not remind until approved."
+        }
+      },
+      {
+        "title": "suggest anniversary caterers",
+        "type": "followup",
+        "owner": "P01",
+        "source_msg": "M13",
+        "status": "open",
+        "closed_by": null,
+        "due": null,
+        "help": {
+          "action": "leave",
+          "reason": "Personal family decision; low value to assist."
+        }
+      },
+      {
+        "title": "book dentist appointment",
+        "type": "followup",
+        "owner": "ME",
+        "source_msg": "M15",
+        "status": "done",
+        "closed_by": "M16",
+        "due": "2026-09-24",
+        "help": null
+      }
+    ],
+    "as_of": 1789604560
+  }
+}

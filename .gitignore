@@ -1,0 +1,28 @@
+# Challenge data and answer keys
+data/
+example/answers/
+*.zip
+
+# Generated test artifacts
+tests/stage-*/
+tests/__pycache__/
+
+# Runtime outputs
+usage.jsonl
+output.json
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary test environments
+.uv-test-cache/
+.uv-test-python/

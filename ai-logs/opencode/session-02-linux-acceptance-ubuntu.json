@@ -1,0 +1,423 @@
+{
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+  "executable": "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+  "start_method": "spawn",
+  "cases": [
+    {
+      "case": "hang",
+      "status": "PASS",
+      "elapsed": 2.655292627999984,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "timeout",
+      "events": [
+        {
+          "event": "start",
+          "pid": 704,
+          "at": 570.231853592,
+          "pgid": 702
+        },
+        {
+          "event": "terminate",
+          "pid": 704,
+          "at": 572.813747074
+        },
+        {
+          "event": "reaped",
+          "pid": 704,
+          "at": 572.81479414,
+          "exitcode": -15
+        }
+      ],
+      "dispatches": [
+        570.204470333
+      ],
+      "cutoff": 576.159669539,
+      "response_progress": [],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 702,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "hang",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/hang"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 3.1310329550000233,
+      "remaining_processes": []
+    },
+    {
+      "case": "slow",
+      "status": "PASS",
+      "elapsed": 3.040544518000047,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "timeout",
+      "events": [
+        {
+          "event": "start",
+          "pid": 708,
+          "at": 573.458354763,
+          "pgid": 705
+        },
+        {
+          "event": "terminate",
+          "pid": 708,
+          "at": 576.045688912
+        },
+        {
+          "event": "reaped",
+          "pid": 708,
+          "at": 576.046864964,
+          "exitcode": -15
+        }
+      ],
+      "dispatches": [
+        573.437035818
+      ],
+      "cutoff": 579.396401661,
+      "response_progress": [
+        573.932869207,
+        574.083648047,
+        574.234141066,
+        574.384917434,
+        574.535626047,
+        574.686085448,
+        574.836665853,
+        574.987095144,
+        575.1379498,
+        575.288653397,
+        575.439036221,
+        575.589542499,
+        575.740039495,
+        575.890426134,
+        576.040977779,
+        576.19137709
+      ],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 705,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "slow",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/slow"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 3.6566408819999197,
+      "remaining_processes": []
+    },
+    {
+      "case": "stall",
+      "status": "PASS",
+      "elapsed": 3.0301847279999947,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "timeout",
+      "events": [
+        {
+          "event": "start",
+          "pid": 715,
+          "at": 577.260263644,
+          "pgid": 712
+        },
+        {
+          "event": "terminate",
+          "pid": 715,
+          "at": 579.849403222
+        },
+        {
+          "event": "reaped",
+          "pid": 715,
+          "at": 579.850539796,
+          "exitcode": -15
+        }
+      ],
+      "dispatches": [
+        577.240790012
+      ],
+      "cutoff": 583.197451157,
+      "response_progress": [
+        577.723093161
+      ],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 712,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "stall",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/stall"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 3.668918979999944,
+      "remaining_processes": []
+    },
+    {
+      "case": "retry",
+      "status": "PASS",
+      "elapsed": 0.042036318999976174,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "deadline",
+      "events": [],
+      "dispatches": [
+        580.964769469
+      ],
+      "cutoff": 586.922935751,
+      "response_progress": [],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 717,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "retry",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/retry"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 0.6516067089999069,
+      "remaining_processes": []
+    },
+    {
+      "case": "crash",
+      "status": "PASS",
+      "elapsed": 0.607874981000009,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "worker_failure",
+      "events": [
+        {
+          "event": "start",
+          "pid": 720,
+          "at": 581.697782065,
+          "pgid": 718
+        },
+        {
+          "event": "reaped",
+          "pid": 720,
+          "at": 582.246588593,
+          "exitcode": 7
+        }
+      ],
+      "dispatches": [
+        581.678415633
+      ],
+      "cutoff": 587.638914503,
+      "response_progress": [],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 718,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "crash",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/crash"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 1.2976574670000218,
+      "remaining_processes": []
+    },
+    {
+      "case": "invalid",
+      "status": "PASS",
+      "elapsed": 0.6743861179999158,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "worker_failure",
+      "events": [
+        {
+          "event": "start",
+          "pid": 723,
+          "at": 582.988509785,
+          "pgid": 721
+        },
+        {
+          "event": "reaped",
+          "pid": 723,
+          "at": 583.491478902,
+          "exitcode": 0
+        }
+      ],
+      "dispatches": [
+        582.963498446
+      ],
+      "cutoff": 588.817259558,
+      "response_progress": [],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 721,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "invalid",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/invalid"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 1.173690916000055,
+      "remaining_processes": []
+    },
+    {
+      "case": "ignore_term",
+      "status": "PASS",
+      "elapsed": 2.869859011000017,
+      "application_exit": 1,
+      "stage": "incomplete",
+      "error": "timeout",
+      "events": [
+        {
+          "event": "start",
+          "pid": 726,
+          "at": 584.17338558,
+          "pgid": 724
+        },
+        {
+          "event": "terminate",
+          "pid": 726,
+          "at": 586.758614779
+        },
+        {
+          "event": "kill",
+          "pid": 726,
+          "at": 586.959536074
+        },
+        {
+          "event": "reaped",
+          "pid": 726,
+          "at": 586.962585579,
+          "exitcode": -9
+        }
+      ],
+      "dispatches": [
+        584.150260527
+      ],
+      "cutoff": 590.093218253,
+      "response_progress": [],
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "pgid": 724,
+      "command": [
+        "/home/shalu_chauhan/.local/share/uv/python/cpython-3.9-linux-x86_64-gnu/bin/python3.9",
+        "-B",
+        "-S",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/linux_acceptance.py",
+        "--inner",
+        "ignore_term",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/ignore_term"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 3.5179829580000614,
+      "remaining_processes": []
+    },
+    {
+      "case": "launcher_hang",
+      "status": "PASS",
+      "markers": [
+        {
+          "event": "main_started",
+          "at": 587.893110935,
+          "pid": 730,
+          "pgid": 728
+        },
+        {
+          "event": "orphan_started",
+          "at": 588.282303451,
+          "pid": 731,
+          "pgid": 728
+        }
+      ],
+      "stage": "interrupted",
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "command": [
+        "bash",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/launcher_hang/run.sh",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/launcher_hang",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/launcher_hang/output.json"
+      ],
+      "launcher_exit": 137,
+      "harness_elapsed": 13.215132229999995,
+      "remaining_processes": []
+    },
+    {
+      "case": "launcher_success",
+      "status": "PASS",
+      "markers": [],
+      "stage": "succeeded_empty",
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "d559b4de12f22e9a1806f32c7f96498675304b9f68ade1f4b79392f50fdc1a05",
+      "command": [
+        "bash",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/run.sh",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/launcher_success",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/launcher_success/output.json"
+      ],
+      "launcher_exit": 0,
+      "harness_elapsed": 0.4538403740000376,
+      "remaining_processes": []
+    },
+    {
+      "case": "interrupted_write",
+      "status": "PASS",
+      "markers": [
+        {
+          "event": "main_started",
+          "at": 601.570975939,
+          "pid": 741,
+          "pgid": 739
+        },
+        {
+          "event": "partial_written",
+          "at": 601.64381536,
+          "pid": 741,
+          "pgid": 739
+        }
+      ],
+      "stage": "interrupted",
+      "before_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "after_sha256": "b0b171caba5f462421e7a3dc810fbc224f368c2a1e3fc2e7c01253a854e39517",
+      "command": [
+        "bash",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/interrupted_write/run.sh",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/interrupted_write",
+        "/mnt/c/Users/Shalu Chauhan/OneDrive/Documents/xpert/xpert-cold-start-starter/cold-start/tests/h1-linux-e2gkh0vd/interrupted_write/output.json"
+      ],
+      "launcher_exit": 124,
+      "harness_elapsed": 12.234932724000032,
+      "remaining_processes": []
+    }
+  ],
+  "scheduling_tolerance": 2.0,
+  "network": "loopback only; external connect and DNS audit-denied",
+  "os_release": "PRETTY_NAME=\"Ubuntu 26.04.1 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"26.04\"\nVERSION=\"26.04.1 LTS (Resolute Raccoon)\"\nVERSION_CODENAME=resolute\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=resolute\nLOGO=ubuntu-logo\n",
+  "timeout_version": "timeout (uutils coreutils) 0.8.0",
+  "packaging": "Six modules imported with -S; selected SchemaValidator constructed",
+  "production_constants": {
+    "network": 1620,
+    "exit": 1770,
+    "kill_grace": 2,
+    "overall": 1800,
+    "residual_margin": 28
+  },
+  "status": "PASS"
+}

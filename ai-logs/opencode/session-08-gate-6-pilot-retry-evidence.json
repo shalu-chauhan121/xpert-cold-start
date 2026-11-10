@@ -1,0 +1,700 @@
+{
+  "budget_summary": {
+    "additional_usage": {},
+    "attempts": 21,
+    "charged_tokens": 35372,
+    "dollar_cost": null,
+    "elapsed": 73.65700000000652,
+    "estimated_prompt_tokens": 79354,
+    "estimator": "conservative UTF-8 bytes + framing proxy (not a guaranteed bound)",
+    "outstanding_reservations": 0,
+    "over_ceiling": false,
+    "recoveries": 1,
+    "recovery_limit": 5,
+    "reported_completion_tokens": 12244,
+    "reported_prompt_tokens": 19141,
+    "reported_total_tokens": 31385,
+    "reserved_completion_tokens": 71680,
+    "retries": 1,
+    "safety_factor": 1.0,
+    "unknown_usage_attempts": 1,
+    "unknown_usage_reservations": 3987,
+    "wait": 1.0
+  },
+  "created": "2026-11-09T06:10:59Z",
+  "envelope": {
+    "max_recoveries": 5,
+    "max_transmissions": 30,
+    "network_seconds": 600,
+    "spend_ceiling_usd": 2.0,
+    "token_reservation": 250000
+  },
+  "envelope_verified": true,
+  "fixture_sha256": {
+    "pilot_bn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "cf5da439d8bbce9e4326bbbd152b414dbc805948f2c6aec4d74cfe7da9890392",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_en": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "832638187e15c9581c6d7a189e71f041e2d9b4bb5358d17b9cbdb2be7fdec64b",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hi": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "9553220a16babe9fddc3509b337a6f08588971cc1dd82e5947fb63031d3af23c",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "57c7f3a63a91666215bd2091fad6a8d89a39872547c8fa76010975aae16a7326",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    }
+  },
+  "mode": "real",
+  "planned": 25,
+  "projected_usd": 0.20300620000000003,
+  "purpose": "Session-05 bounded pilot evidence (synthetic fixtures only). The envelope is a planning constraint, not a spend grant.",
+  "run_state": "completed",
+  "stage_states": {
+    "pilot_bn/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_bn/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded_empty"
+    },
+    "pilot_bn/tasks": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_en/entities": {
+      "failures": 0,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_en/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded"
+    },
+    "pilot_en/help": {
+      "failures": 1,
+      "state": "incomplete"
+    },
+    "pilot_en/organisations": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete"
+    },
+    "pilot_en/tasks": {
+      "failures": 3,
+      "pending": 3,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_hi/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_hi/goals": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete"
+    },
+    "pilot_hi/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    },
+    "pilot_hn/tasks": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete",
+      "unresolved": 0
+    }
+  },
+  "stopped": null,
+  "synthetic_only": true,
+  "telemetry": [
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:cb9459ddf8011bba:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 0,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3214,
+          "elapsed_s": 5.5,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 2071,
+          "reported_prompt_tokens": 1143,
+          "reported_total_tokens": 3214,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:cb9459ddf8011bba:1",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 1,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 429,
+          "elapsed_s": 2.344,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 83,
+          "reported_prompt_tokens": 346,
+          "reported_total_tokens": 429,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "job_id": "organisations:6b0835fa39b20c0154a9d7662dfad64edfefc7646640223fc5a7e56f0520d644",
+      "label": "organisations",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_en",
+      "records_before": 2,
+      "stage": "organisations",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 453,
+          "elapsed_s": 1.64,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 90,
+          "reported_prompt_tokens": 363,
+          "reported_total_tokens": 453,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "goals:11bd0f428f9a3f278cda27d245860eed15db3c1420f2c1f0f7699d8be3b6b97a",
+      "label": "goals",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 3,
+      "stage": "goals",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 917,
+          "elapsed_s": 2.172,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 246,
+          "reported_prompt_tokens": 671,
+          "reported_total_tokens": 917,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "job_id": "task-review:6754510a6be0613e41d88bc9dcf102f2886fed7b7ed00f64ee9fb33635c25136",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_en",
+      "records_before": 4,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 558,
+          "elapsed_s": 2.031,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 86,
+          "reported_prompt_tokens": 472,
+          "reported_total_tokens": 558,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "malformed_content",
+      "job_id": "task-review:60fcf2c8159a0ee6d61b31eb15ff662c651fcdace6e6ee6a6430900b2565152e",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "malformed_content",
+      "pack": "pilot_en",
+      "records_before": 5,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 641,
+          "elapsed_s": 1.735,
+          "outcome": "malformed_content",
+          "recovery": false,
+          "reported_completion_tokens": 153,
+          "reported_prompt_tokens": 488,
+          "reported_total_tokens": 641,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "job_id": "task-review:f274d98a444885dc2ba763f2c655f05e54fd89fb231d3dd36cad6e9d4896ce73",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_en",
+      "records_before": 6,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 631,
+          "elapsed_s": 2.25,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 138,
+          "reported_prompt_tokens": 493,
+          "reported_total_tokens": 631,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 7,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3373,
+          "elapsed_s": 5.313,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 2186,
+          "reported_prompt_tokens": 1187,
+          "reported_total_tokens": 3373,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:5",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 8,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 439,
+          "elapsed_s": 3.375,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 89,
+          "reported_prompt_tokens": 350,
+          "reported_total_tokens": 439,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "job_id": "entities:aa35c1afcbe9758536d85b93519c19df4d3678d006a2e4947893162920f82ef6",
+      "label": "entities",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_hi",
+      "records_before": 9,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 4638,
+          "elapsed_s": 3.0,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 540,
+          "reported_prompt_tokens": 4098,
+          "reported_total_tokens": 4638,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "malformed_content",
+      "job_id": "goals:fcce90f43ae54344276e7641dc9f78bb3253e4dbd60d59a0cfdc761129ae8857",
+      "label": "goals",
+      "model": null,
+      "outcome": "malformed_content",
+      "pack": "pilot_hi",
+      "records_before": 10,
+      "stage": "goals",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 925,
+          "elapsed_s": 4.422,
+          "outcome": "malformed_content",
+          "recovery": false,
+          "reported_completion_tokens": 247,
+          "reported_prompt_tokens": 678,
+          "reported_total_tokens": 925,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:4611569ffdd1cba2a7bb13d7df3a68fb5eb6e426942fbbc3925533384f484074",
+      "label": "task_interpret",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 11,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 534,
+          "elapsed_s": 1.969,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 44,
+          "reported_prompt_tokens": 490,
+          "reported_total_tokens": 534,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 12,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3343,
+          "elapsed_s": 7.203,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 2153,
+          "reported_prompt_tokens": 1190,
+          "reported_total_tokens": 3343,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:1",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 13,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 434,
+          "elapsed_s": 2.203,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 87,
+          "reported_prompt_tokens": 347,
+          "reported_total_tokens": 434,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "organisations:643b1d0ceea32140c46692ed19d029166e192e832c1eccfad1e8cd77c9f159bd",
+      "label": "organisations",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 14,
+      "stage": "organisations",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 236,
+          "elapsed_s": 2.562,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 10,
+          "reported_prompt_tokens": 226,
+          "reported_total_tokens": 236,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "job_id": "entities:e12a1be427c535f2d7667378cd638016940b1f778bacc7116c02ab9f8f3d5730",
+      "label": "entities",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_bn",
+      "records_before": 15,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 5947,
+          "elapsed_s": 7.75,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 1895,
+          "reported_prompt_tokens": 4052,
+          "reported_total_tokens": 5947,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "malformed_content",
+      "job_id": "task-review:451d608faffe4b0af8705a9db97ab801c6025c15b4d6b3160aff229ecf2eb6ec",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "malformed_content",
+      "pack": "pilot_bn",
+      "records_before": 16,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3987,
+          "elapsed_s": 3.094,
+          "outcome": "http_error",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 2,
+          "charged_tokens": 579,
+          "elapsed_s": 2.438,
+          "outcome": "malformed_content",
+          "recovery": true,
+          "reported_completion_tokens": 99,
+          "reported_prompt_tokens": 480,
+          "reported_total_tokens": 579,
+          "retry": true,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 18,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2992,
+          "elapsed_s": 7.015,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 1849,
+          "reported_prompt_tokens": 1143,
+          "reported_total_tokens": 2992,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:5",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 19,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 432,
+          "elapsed_s": 2.953,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 85,
+          "reported_prompt_tokens": 347,
+          "reported_total_tokens": 432,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "malformed_content",
+      "job_id": "task-review:ef19e1329aed6077dcdf1a05a3e6412fc33e42eef3ca7b0de69733ca5784dc51",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "malformed_content",
+      "pack": "pilot_hn",
+      "records_before": 20,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 670,
+          "elapsed_s": 2.688,
+          "outcome": "malformed_content",
+          "recovery": false,
+          "reported_completion_tokens": 93,
+          "reported_prompt_tokens": 577,
+          "reported_total_tokens": 670,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    }
+  ],
+  "verified_pricing": {
+    "currency": "USD",
+    "input_usd_per_mtok": 0.3,
+    "model": "gemini-3.5-flash-lite",
+    "output_usd_per_mtok": 2.5,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing (Gemini 3.5 Flash-Lite, Standard rates), retrieved 2026-11-08 (Session 08 re-verification); exact stable model code https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
+    "verification": {
+      "context_caching_paid_usd_per_mtok": 0.03,
+      "free_tier": "input and output Free of charge; no billing activated; no paid fallback authorized",
+      "free_tier_context_caching": "Not available (unused by this pilot)",
+      "free_tier_quotas": "Per-model RPM/TPM/RPD now delegated to AI Studio by the rate-limits page; the recorded planning quotas (15 RPM / 250K TPM / 500 RPD) stay the working assumption, and serialized dispatch plus 429/Retry-After backoff absorbs throttling either way",
+      "model_id": "gemini-3.5-flash-lite (stable; no preview suffix)",
+      "re_verified": "2026-11-08 (Session 08, official Google documentation)",
+      "structured_output": "Response format supported per the model page; calls use response_format json_object only",
+      "temperature": "Deprecated and ignored for this model; the client omits the key for gemini-3-prefixed model IDs"
+    }
+  }
+}

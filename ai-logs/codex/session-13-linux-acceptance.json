@@ -1,0 +1,11 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Shalu Chauhan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "start_method": "spawn",
+  "cases": [],
+  "scheduling_tolerance": 2.0,
+  "network": "loopback only; external connect and DNS audit-denied",
+  "status": "BLOCKED",
+  "reason": "Requires Linux CPython 3.9.25"
+}

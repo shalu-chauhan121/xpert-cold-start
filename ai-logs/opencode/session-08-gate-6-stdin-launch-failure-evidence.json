@@ -1,0 +1,432 @@
+{
+  "budget_summary": {
+    "additional_usage": {},
+    "attempts": 13,
+    "charged_tokens": 69071,
+    "dollar_cost": null,
+    "elapsed": 1.3600000000442378,
+    "estimated_prompt_tokens": 42447,
+    "estimator": "conservative UTF-8 bytes + framing proxy (not a guaranteed bound)",
+    "outstanding_reservations": 0,
+    "over_ceiling": false,
+    "recoveries": 5,
+    "recovery_limit": 5,
+    "reported_completion_tokens": 0,
+    "reported_prompt_tokens": 0,
+    "reported_total_tokens": 0,
+    "reserved_completion_tokens": 26624,
+    "retries": 5,
+    "safety_factor": 1.0,
+    "unknown_usage_attempts": 13,
+    "unknown_usage_reservations": 69071,
+    "wait": 7.0
+  },
+  "created": "2026-11-08T19:55:24Z",
+  "envelope": {
+    "max_recoveries": 5,
+    "max_transmissions": 30,
+    "network_seconds": 600,
+    "spend_ceiling_usd": 2.0,
+    "token_reservation": 250000
+  },
+  "envelope_verified": true,
+  "fixture_sha256": {
+    "pilot_bn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "cf5da439d8bbce9e4326bbbd152b414dbc805948f2c6aec4d74cfe7da9890392",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_en": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "832638187e15c9581c6d7a189e71f041e2d9b4bb5358d17b9cbdb2be7fdec64b",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hi": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "9553220a16babe9fddc3509b337a6f08588971cc1dd82e5947fb63031d3af23c",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "57c7f3a63a91666215bd2091fad6a8d89a39872547c8fa76010975aae16a7326",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    }
+  },
+  "mode": "real",
+  "planned": 25,
+  "projected_usd": 0.0792941,
+  "purpose": "Session-05 bounded pilot evidence (synthetic fixtures only). The envelope is a planning constraint, not a spend grant.",
+  "run_state": "completed",
+  "stage_states": {
+    "pilot_bn/entities": {
+      "failures": 0,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_bn/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_bn/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_en/entities": {
+      "failures": 0,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_en/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_en/help": {
+      "failures": 1,
+      "state": "incomplete"
+    },
+    "pilot_en/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_en/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_hi/entities": {
+      "failures": 0,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_hi/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_hi/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_hn/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete",
+      "unresolved": 0
+    }
+  },
+  "stopped": null,
+  "synthetic_only": true,
+  "telemetry": [
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:cb9459ddf8011bba:0",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_en",
+      "records_before": 0,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 6187,
+          "elapsed_s": 0.11,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 2,
+          "charged_tokens": 6187,
+          "elapsed_s": 0.109,
+          "outcome": "worker_failure",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 2.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 3,
+          "charged_tokens": 6187,
+          "elapsed_s": 0.141,
+          "outcome": "worker_failure",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:cb9459ddf8011bba:1",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_en",
+      "records_before": 3,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3677,
+          "elapsed_s": 0.093,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 2,
+          "charged_tokens": 3677,
+          "elapsed_s": 0.125,
+          "outcome": "worker_failure",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 2.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 3,
+          "charged_tokens": 3677,
+          "elapsed_s": 0.11,
+          "outcome": "worker_failure",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:8aa8019e615a4570:0",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_hi",
+      "records_before": 6,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 7335,
+          "elapsed_s": 0.094,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 2,
+          "charged_tokens": 7335,
+          "elapsed_s": 0.094,
+          "outcome": "worker_failure",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:8aa8019e615a4570:5",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_hi",
+      "records_before": 8,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3759,
+          "elapsed_s": 0.094,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:770f2807c228cb32:0",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_bn",
+      "records_before": 9,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 7445,
+          "elapsed_s": 0.109,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:770f2807c228cb32:1",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_bn",
+      "records_before": 10,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3770,
+          "elapsed_s": 0.078,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:c34cfea05ad12ede:0",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_hn",
+      "records_before": 11,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 6169,
+          "elapsed_s": 0.11,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "worker_failure",
+      "job_id": "extract:c34cfea05ad12ede:5",
+      "label": "EX",
+      "model": null,
+      "outcome": "worker_failure",
+      "pack": "pilot_hn",
+      "records_before": 12,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3666,
+          "elapsed_s": 0.093,
+          "outcome": "worker_failure",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    }
+  ],
+  "verified_pricing": {
+    "currency": "USD",
+    "input_usd_per_mtok": 0.3,
+    "model": "gemini-3.5-flash-lite",
+    "output_usd_per_mtok": 2.5,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing (Gemini 3.5 Flash-Lite, Standard rates), retrieved 2026-11-08 (Session 08 re-verification); exact stable model code https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
+    "verification": {
+      "context_caching_paid_usd_per_mtok": 0.03,
+      "free_tier": "input and output Free of charge; no billing activated; no paid fallback authorized",
+      "free_tier_context_caching": "Not available (unused by this pilot)",
+      "free_tier_quotas": "Per-model RPM/TPM/RPD now delegated to AI Studio by the rate-limits page; the recorded planning quotas (15 RPM / 250K TPM / 500 RPD) stay the working assumption, and serialized dispatch plus 429/Retry-After backoff absorbs throttling either way",
+      "model_id": "gemini-3.5-flash-lite (stable; no preview suffix)",
+      "re_verified": "2026-11-08 (Session 08, official Google documentation)",
+      "structured_output": "Response format supported per the model page; calls use response_format json_object only",
+      "temperature": "Deprecated and ignored for this model; the client omits the key for gemini-3-prefixed model IDs"
+    }
+  }
+}

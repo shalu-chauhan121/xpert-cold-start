@@ -1,0 +1,4 @@
+{"chat_id": "C_MAIN", "name": "Pilot family coordination", "is_group": true, "participants": ["ME", "P01", "P02", "P03"]}
+{"chat_id": "C_PAIR", "name": "Pilot errand chat", "is_group": false, "participants": ["ME", "P06"]}
+{"chat_id": "C_QUOTE", "name": "Pilot follow-up chat", "is_group": false, "participants": ["ME", "P05"]}
+{"chat_id": "C_ORG", "name": "Pilot home services", "is_group": false, "participants": ["ME", "P04"]}

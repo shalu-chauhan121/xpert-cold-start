@@ -1,0 +1,11 @@
+{
+  "circles": {
+    "P01": "spouse",
+    "P02": "staff",
+    "P03": "colleague"
+  },
+  "organisations": [
+    "HomeServe"
+  ],
+  "goals": []
+}

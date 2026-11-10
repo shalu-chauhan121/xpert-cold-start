@@ -1,0 +1,841 @@
+{
+  "budget_summary": {
+    "additional_usage": {},
+    "attempts": 25,
+    "charged_tokens": 160801,
+    "dollar_cost": null,
+    "elapsed": 0,
+    "estimated_prompt_tokens": 122693,
+    "estimator": "conservative UTF-8 bytes + framing proxy (not a guaranteed bound)",
+    "outstanding_reservations": 0,
+    "over_ceiling": false,
+    "recoveries": 0,
+    "recovery_limit": 5,
+    "reported_completion_tokens": 25820,
+    "reported_prompt_tokens": 68849,
+    "reported_total_tokens": 94669,
+    "reserved_completion_tokens": 83968,
+    "retries": 0,
+    "safety_factor": 1.0,
+    "unknown_usage_attempts": 3,
+    "unknown_usage_reservations": 66132,
+    "wait": 0.0
+  },
+  "created": "2026-11-10T14:41:42Z",
+  "envelope": {
+    "max_recoveries": 5,
+    "max_transmissions": 30,
+    "network_seconds": 600,
+    "spend_ceiling_usd": 2.0,
+    "token_reservation": 250000
+  },
+  "envelope_verified": true,
+  "fixture_sha256": {
+    "pilot_bn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "cf5da439d8bbce9e4326bbbd152b414dbc805948f2c6aec4d74cfe7da9890392",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_en": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "832638187e15c9581c6d7a189e71f041e2d9b4bb5358d17b9cbdb2be7fdec64b",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hi": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "9553220a16babe9fddc3509b337a6f08588971cc1dd82e5947fb63031d3af23c",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "57c7f3a63a91666215bd2091fad6a8d89a39872547c8fa76010975aae16a7326",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    }
+  },
+  "mode": "test",
+  "planned": 25,
+  "projected_usd": 0.40689975,
+  "purpose": "Session-05 bounded pilot evidence (synthetic fixtures only). The envelope is a planning constraint, not a spend grant.",
+  "run_state": "completed",
+  "stage_states": {
+    "pilot_bn/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_bn/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded"
+    },
+    "pilot_bn/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    },
+    "pilot_en/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_en/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded"
+    },
+    "pilot_en/help": {
+      "failures": 0,
+      "pending": 1,
+      "state": "incomplete"
+    },
+    "pilot_en/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded"
+    },
+    "pilot_en/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    },
+    "pilot_hi/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_hi/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded"
+    },
+    "pilot_hi/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    },
+    "pilot_hn/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 0
+    }
+  },
+  "stopped": null,
+  "synthetic_only": true,
+  "telemetry": [
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:cb9459ddf8011bba:0",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 0,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 9274,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 4799,
+          "reported_prompt_tokens": 4475,
+          "reported_total_tokens": 9274,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:cb9459ddf8011bba:1",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 1,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2798,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 833,
+          "reported_prompt_tokens": 1965,
+          "reported_total_tokens": 2798,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "organisations:5a379fc5b5af6f91398e3df6cb28a9328709c16dc29563c8111a581c0dfcdab4",
+      "label": "organisations",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 2,
+      "stage": "organisations",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2636,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 346,
+          "reported_prompt_tokens": 2290,
+          "reported_total_tokens": 2636,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "transport",
+      "error_detail": "Transport returned an invalid result.",
+      "job_id": "entities:eb3e17b7b704ebc8889c522a9d8363cf2586b7e9589230b673090c1db649bb68",
+      "label": "entities",
+      "model": null,
+      "outcome": "transport",
+      "pack": "pilot_en",
+      "records_before": 3,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 20890,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "transport",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "goals:f9fc45f5d0cdb52a1a1779200cef5dde511f7430b505c663baed345954ed7679",
+      "label": "goals",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 4,
+      "stage": "goals",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 5150,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 751,
+          "reported_prompt_tokens": 4399,
+          "reported_total_tokens": 5150,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:e608f8cdae609c7fb2851fd146c16f1fa56ef5fed8601abee76de90a521310bc",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 5,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2292,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 99,
+          "reported_prompt_tokens": 2193,
+          "reported_total_tokens": 2292,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:348e0b7e3d91331ceb850251ccca9674a28e855a7b07ce27111e68c77119a6a8",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 6,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2285,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 99,
+          "reported_prompt_tokens": 2186,
+          "reported_total_tokens": 2285,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:735f738bf75726bd3ac1601db9bde9c67e4b4c30acc7dc39295c3a0dfd0b781f",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 7,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2373,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 192,
+          "reported_prompt_tokens": 2181,
+          "reported_total_tokens": 2373,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:1cbbc282bf5db02ad6ba882088212985d5bcfd145a2395ff28b4dd643912475c",
+      "label": "task_match",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_en",
+      "records_before": 8,
+      "stage": "task_match",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3686,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 106,
+          "reported_prompt_tokens": 3580,
+          "reported_total_tokens": 3686,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "error_detail": "Response failed caller validation (ValidationError); required fields or coverage may be missing.",
+      "job_id": "help:9740d5ad0c8be5b6654656d7988ce50e33fd7ba9d15d4c9d7e9f2e547810be30",
+      "label": "help",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_en",
+      "records_before": 9,
+      "stage": "help",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 4003,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 170,
+          "reported_prompt_tokens": 3833,
+          "reported_total_tokens": 4003,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:0",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 10,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 10373,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 4750,
+          "reported_prompt_tokens": 5623,
+          "reported_total_tokens": 10373,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:5",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 11,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2867,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 820,
+          "reported_prompt_tokens": 2047,
+          "reported_total_tokens": 2867,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "transport",
+      "error_detail": "Transport returned an invalid result.",
+      "job_id": "entities:944094072a8e193577ef8e2076def0005f565326e4573245101c2e19050e5dc7",
+      "label": "entities",
+      "model": null,
+      "outcome": "transport",
+      "pack": "pilot_hi",
+      "records_before": 12,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 22475,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "transport",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "goals:d51487a71854106093bd92b1c51013f5c4a52d0180aa6a6a1fce5cf2c7b23631",
+      "label": "goals",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 13,
+      "stage": "goals",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 5676,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 760,
+          "reported_prompt_tokens": 4916,
+          "reported_total_tokens": 5676,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:d0386625bec17832e76385577356d1734c4f137349dc69c0471814be8c3e96a2",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 14,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2466,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 99,
+          "reported_prompt_tokens": 2367,
+          "reported_total_tokens": 2466,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:0",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 15,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 10505,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 4772,
+          "reported_prompt_tokens": 5733,
+          "reported_total_tokens": 10505,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:1",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 16,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2864,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 806,
+          "reported_prompt_tokens": 2058,
+          "reported_total_tokens": 2864,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "organisations:33addff6bf7d57dd466104616ef345ebbff1d0fa24633d8f529a1878f42315e6",
+      "label": "organisations",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 17,
+      "stage": "organisations",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2727,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 344,
+          "reported_prompt_tokens": 2383,
+          "reported_total_tokens": 2727,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "transport",
+      "error_detail": "Transport returned an invalid result.",
+      "job_id": "entities:e8341879a9341b9c08336105f7509743fbad2b66ef0821d5c00a20b68d64d3a5",
+      "label": "entities",
+      "model": null,
+      "outcome": "transport",
+      "pack": "pilot_bn",
+      "records_before": 18,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 22767,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "transport",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:db8173318657ee5131c9caa03c9bc016f970a5e05cfc68d0e6054a3e7baa320d",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 19,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2410,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 94,
+          "reported_prompt_tokens": 2316,
+          "reported_total_tokens": 2410,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:0",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 20,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 9219,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 4762,
+          "reported_prompt_tokens": 4457,
+          "reported_total_tokens": 9219,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:5",
+      "label": "EX",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 21,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2759,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 805,
+          "reported_prompt_tokens": 1954,
+          "reported_total_tokens": 2759,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:392739a70544fabde22726632e33d8460f3a9b266b899b834c68ce57f3f93518",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 22,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2373,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 199,
+          "reported_prompt_tokens": 2174,
+          "reported_total_tokens": 2373,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:07ed9e3ec716bb027e1b2fd7053a17bde96b1a4e8f0024c601c346f477d16488",
+      "label": "task_interpret",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 23,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2261,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 108,
+          "reported_prompt_tokens": 2153,
+          "reported_total_tokens": 2261,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:f6f0e22312160fd0f0b59138814a0a86c7feed7581c1b0e93ca0153b3c6c1694",
+      "label": "task_match",
+      "model": "mock-pilot-1",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 24,
+      "stage": "task_match",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3672,
+          "elapsed_s": 0,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 106,
+          "reported_prompt_tokens": 3566,
+          "reported_total_tokens": 3672,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    }
+  ],
+  "verified_pricing": {
+    "currency": "USD",
+    "input_usd_per_mtok": 0.75,
+    "model": "synthetic-mock-1",
+    "output_usd_per_mtok": 3.75,
+    "source": "offline projection only"
+  }
+}

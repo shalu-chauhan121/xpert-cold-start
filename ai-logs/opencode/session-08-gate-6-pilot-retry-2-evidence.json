@@ -1,0 +1,627 @@
+{
+  "budget_summary": {
+    "additional_usage": {
+      "prompt_tokens_details.cached_tokens": 1997
+    },
+    "attempts": 18,
+    "charged_tokens": 68313,
+    "dollar_cost": null,
+    "elapsed": 113.48500000004424,
+    "estimated_prompt_tokens": 91917,
+    "estimator": "conservative UTF-8 bytes + framing proxy (not a guaranteed bound)",
+    "outstanding_reservations": 0,
+    "over_ceiling": false,
+    "recoveries": 3,
+    "recovery_limit": 5,
+    "reported_completion_tokens": 8134,
+    "reported_prompt_tokens": 15656,
+    "reported_total_tokens": 23790,
+    "reserved_completion_tokens": 67584,
+    "retries": 3,
+    "safety_factor": 1.0,
+    "unknown_usage_attempts": 4,
+    "unknown_usage_reservations": 44523,
+    "wait": 4.0
+  },
+  "created": "2026-11-09T07:42:26Z",
+  "envelope": {
+    "max_recoveries": 5,
+    "max_transmissions": 30,
+    "network_seconds": 600,
+    "spend_ceiling_usd": 2.0,
+    "token_reservation": 250000
+  },
+  "envelope_verified": true,
+  "fixture_sha256": {
+    "pilot_bn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "cf5da439d8bbce9e4326bbbd152b414dbc805948f2c6aec4d74cfe7da9890392",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_en": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "832638187e15c9581c6d7a189e71f041e2d9b4bb5358d17b9cbdb2be7fdec64b",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hi": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "9553220a16babe9fddc3509b337a6f08588971cc1dd82e5947fb63031d3af23c",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    },
+    "pilot_hn": {
+      "chats.jsonl": "307b9e93590b3e8d5618f8209d45778ebe1472c70fab15eaaba6a853f54451dc",
+      "messages.jsonl": "57c7f3a63a91666215bd2091fad6a8d89a39872547c8fa76010975aae16a7326",
+      "seed.json": "774362e51709ef5d5ac45d57afdd245ccf416db8f96fc37fd98de01cf2a9d660"
+    }
+  },
+  "mode": "real",
+  "planned": 25,
+  "projected_usd": 0.19653510000000002,
+  "purpose": "Session-05 bounded pilot evidence (synthetic fixtures only). The envelope is a planning constraint, not a spend grant.",
+  "response_captures": {
+    "capture_failures": 0,
+    "count": 18,
+    "path": "session-08-gate-6-pilot-retry-2-captures.json"
+  },
+  "run_state": "completed",
+  "stage_states": {
+    "pilot_bn/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_bn/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded_empty"
+    },
+    "pilot_bn/tasks": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_en/entities": {
+      "failures": 0,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_en/goals": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_en/help": {
+      "failures": 1,
+      "state": "incomplete"
+    },
+    "pilot_en/organisations": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete"
+    },
+    "pilot_en/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "incomplete",
+      "unresolved": 0
+    },
+    "pilot_hi/entities": {
+      "failures": 1,
+      "pending": 10,
+      "state": "incomplete"
+    },
+    "pilot_hi/goals": {
+      "failures": 1,
+      "pending": 1,
+      "state": "incomplete"
+    },
+    "pilot_hi/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    },
+    "pilot_hn/tasks": {
+      "failures": 0,
+      "pending": 0,
+      "state": "succeeded",
+      "unresolved": 1
+    }
+  },
+  "stopped": null,
+  "synthetic_only": true,
+  "telemetry": [
+    {
+      "dispatched": true,
+      "error_code": "http_error",
+      "error_detail": "Temporary HTTP failure.",
+      "http_status": 503,
+      "job_id": "extract:cb9459ddf8011bba:0",
+      "label": "EX",
+      "model": null,
+      "outcome": "http_error",
+      "pack": "pilot_en",
+      "records_before": 0,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 8339,
+          "elapsed_s": 13.406,
+          "http_status": 503,
+          "outcome": "http_error",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 2,
+          "charged_tokens": 8339,
+          "elapsed_s": 10.875,
+          "http_status": 503,
+          "outcome": "http_error",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 2.0
+        },
+        {
+          "additional_usage": {},
+          "attempt": 3,
+          "charged_tokens": 8339,
+          "elapsed_s": 9.641,
+          "http_status": 503,
+          "outcome": "http_error",
+          "recovery": true,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": true,
+          "unknown_usage": true,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "error_detail": "Response failed caller validation (ReasoningError); required fields or coverage may be missing.",
+      "job_id": "extract:cb9459ddf8011bba:1",
+      "label": "EX",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_en",
+      "records_before": 3,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 508,
+          "elapsed_s": 4.234,
+          "http_status": null,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 162,
+          "reported_prompt_tokens": 346,
+          "reported_total_tokens": 508,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 4,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3333,
+          "elapsed_s": 9.516,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 2146,
+          "reported_prompt_tokens": 1187,
+          "reported_total_tokens": 3333,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:8aa8019e615a4570:5",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 5,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 517,
+          "elapsed_s": 3.593,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 167,
+          "reported_prompt_tokens": 350,
+          "reported_total_tokens": 517,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "error_detail": "Response failed caller validation (ReasoningError); required fields or coverage may be missing.",
+      "job_id": "entities:bc29793e81689351320a8401eb2971697c69debae18c3910f069117fff46d1b4",
+      "label": "entities",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_hi",
+      "records_before": 6,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 4654,
+          "elapsed_s": 2.735,
+          "http_status": null,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 540,
+          "reported_prompt_tokens": 4114,
+          "reported_total_tokens": 4654,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "malformed_content",
+      "error_detail": "Content does not satisfy the requested JSON format.",
+      "job_id": "goals:fcce90f43ae54344276e7641dc9f78bb3253e4dbd60d59a0cfdc761129ae8857",
+      "label": "goals",
+      "model": null,
+      "outcome": "malformed_content",
+      "pack": "pilot_hi",
+      "records_before": 7,
+      "stage": "goals",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 952,
+          "elapsed_s": 2.891,
+          "http_status": null,
+          "outcome": "malformed_content",
+          "recovery": false,
+          "reported_completion_tokens": 248,
+          "reported_prompt_tokens": 704,
+          "reported_total_tokens": 952,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:22194df87aea76aaafc59fb048e45abfe92c4aae0db7df52219387e0bc501954",
+      "label": "task_interpret",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hi",
+      "records_before": 8,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 545,
+          "elapsed_s": 1.812,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 44,
+          "reported_prompt_tokens": 501,
+          "reported_total_tokens": 545,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 9,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 3327,
+          "elapsed_s": 7.797,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 2137,
+          "reported_prompt_tokens": 1190,
+          "reported_total_tokens": 3327,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:770f2807c228cb32:1",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 10,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 434,
+          "elapsed_s": 2.766,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 87,
+          "reported_prompt_tokens": 347,
+          "reported_total_tokens": 434,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "organisations:643b1d0ceea32140c46692ed19d029166e192e832c1eccfad1e8cd77c9f159bd",
+      "label": "organisations",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_bn",
+      "records_before": 11,
+      "stage": "organisations",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 273,
+          "elapsed_s": 11.297,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 21,
+          "reported_prompt_tokens": 252,
+          "reported_total_tokens": 273,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "error_detail": "Response failed caller validation (ReasoningError); required fields or coverage may be missing.",
+      "job_id": "entities:0af5fff7c040968eca3a0ef70c0c3b0e8302aea4ebe00652917d8a66ec970d90",
+      "label": "entities",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_bn",
+      "records_before": 12,
+      "stage": "entities",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 19506,
+          "elapsed_s": 6.094,
+          "http_status": 503,
+          "outcome": "http_error",
+          "recovery": false,
+          "reported_completion_tokens": null,
+          "reported_prompt_tokens": null,
+          "reported_total_tokens": null,
+          "retry": false,
+          "unknown_usage": true,
+          "wait_s": 1.0
+        },
+        {
+          "additional_usage": {
+            "prompt_tokens_details.cached_tokens": 1997
+          },
+          "attempt": 2,
+          "charged_tokens": 4607,
+          "elapsed_s": 7.922,
+          "http_status": null,
+          "outcome": "validation",
+          "recovery": true,
+          "reported_completion_tokens": 541,
+          "reported_prompt_tokens": 4066,
+          "reported_total_tokens": 4607,
+          "retry": true,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "error_code": "validation",
+      "error_detail": "Response failed caller validation (TaskError); required fields or coverage may be missing.",
+      "job_id": "task-review:072d030d84550df1ed384aebf85d14019b817943ac57cd3cf6990d0b22ec5f34",
+      "label": "task_interpret",
+      "model": null,
+      "outcome": "validation",
+      "pack": "pilot_bn",
+      "records_before": 14,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 617,
+          "elapsed_s": 4.984,
+          "http_status": null,
+          "outcome": "validation",
+          "recovery": false,
+          "reported_completion_tokens": 102,
+          "reported_prompt_tokens": 515,
+          "reported_total_tokens": 617,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:0",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 15,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 2945,
+          "elapsed_s": 7.797,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 1802,
+          "reported_prompt_tokens": 1143,
+          "reported_total_tokens": 2945,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "extract:c34cfea05ad12ede:5",
+      "label": "EX",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 16,
+      "stage": "extraction",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 434,
+          "elapsed_s": 1.828,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 87,
+          "reported_prompt_tokens": 347,
+          "reported_total_tokens": 434,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    },
+    {
+      "dispatched": true,
+      "finish_reason": "stop",
+      "job_id": "task-review:ef19e1329aed6077dcdf1a05a3e6412fc33e42eef3ca7b0de69733ca5784dc51",
+      "label": "task_interpret",
+      "model": "gemini-3.5-flash-lite",
+      "outcome": "success",
+      "pack": "pilot_hn",
+      "records_before": 17,
+      "stage": "task_interpret",
+      "transmissions": [
+        {
+          "additional_usage": {},
+          "attempt": 1,
+          "charged_tokens": 644,
+          "elapsed_s": 4.297,
+          "http_status": null,
+          "outcome": "success",
+          "recovery": false,
+          "reported_completion_tokens": 50,
+          "reported_prompt_tokens": 594,
+          "reported_total_tokens": 644,
+          "retry": false,
+          "unknown_usage": false,
+          "wait_s": 0.0
+        }
+      ]
+    }
+  ],
+  "verified_pricing": {
+    "currency": "USD",
+    "input_usd_per_mtok": 0.3,
+    "model": "gemini-3.5-flash-lite",
+    "output_usd_per_mtok": 2.5,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing (Gemini 3.5 Flash-Lite, Standard rates), retrieved 2026-11-08 (Session 08 re-verification); exact stable model code https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
+    "verification": {
+      "context_caching_paid_usd_per_mtok": 0.03,
+      "free_tier": "input and output Free of charge; no billing activated; no paid fallback authorized",
+      "free_tier_context_caching": "Not available (unused by this pilot)",
+      "free_tier_quotas": "Per-model RPM/TPM/RPD now delegated to AI Studio by the rate-limits page; the recorded planning quotas (15 RPM / 250K TPM / 500 RPD) stay the working assumption, and serialized dispatch plus 429/Retry-After backoff absorbs throttling either way",
+      "model_id": "gemini-3.5-flash-lite (stable; no preview suffix)",
+      "re_verified": "2026-11-08 (Session 08, official Google documentation)",
+      "structured_output": "Response format supported per the model page; calls use response_format json_object only",
+      "temperature": "Deprecated and ignored for this model; the client omits the key for gemini-3-prefixed model IDs"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "purpose": "Session-03 READ-ONLY workload estimation (planning evidence; no predictions, no LLM)",
+  "input_dir": "C:\\Users\\Shalu Chauhan\\OneDrive\\Documents\\Xpert\\xpert-cold-start\\data\\dev",
+  "input_sha256_before": {
+    "chats.jsonl": "e14372d53ae2fc3f83ba8092f7873907eadc3ae402969b1dddb9ffb7a4d41a05",
+    "messages.jsonl": "97493ce8e3f9be7af3486ee61c93e7ddd1cd24e0983150471656b3e06463b01b",
+    "seed.json": "93ebe3c1f000fa877dbb8cc93b2076a51a3a289bc14621c44b13b1ec52943953"
+  },
+  "input_sha256_after": {
+    "chats.jsonl": "e14372d53ae2fc3f83ba8092f7873907eadc3ae402969b1dddb9ffb7a4d41a05",
+    "messages.jsonl": "97493ce8e3f9be7af3486ee61c93e7ddd1cd24e0983150471656b3e06463b01b",
+    "seed.json": "93ebe3c1f000fa877dbb8cc93b2076a51a3a289bc14621c44b13b1ec52943953"
+  },
+  "inputs_unchanged": true,
+  "counts": {
+    "chats_indexed": 138,
+    "people_excluding_ME": 286,
+    "messages_indexed": 4502,
+    "message_lines_seen": 4502,
+    "as_of": 1788715761,
+    "messages_per_chat": {
+      "count": 138,
+      "total": 4502,
+      "min": 1,
+      "median": 8.5,
+      "mean": 32.6,
+      "p90": 45,
+      "max": 865
+    },
+    "zero_message_chats": 0,
+    "group_chats": 64,
+    "one_to_one_chats": 74,
+    "body_chars_total": 399365,
+    "seed_circles": 10,
+    "seed_organisations": 2,
+    "seed_goals": 0
+  },
+  "language_script_distribution": {
+    "messages": {
+      "Latin": 4449,
+      "Devanagari": 44,
+      "Latin-mixed": 2,
+      "Devanagari-mixed": 4,
+      "Bengali-mixed": 2,
+      "Bengali": 1
+    },
+    "chars": {
+      "Devanagari": 4938,
+      "Bengali": 489,
+      "Latin": 390751,
+      "other": 3187
+    }
+  },
+  "windows": {
+    "window_count": 280,
+    "coverage_report": {
+      "status": "succeeded",
+      "input_status": "succeeded",
+      "indexed_messages": 4502,
+      "fully_covered_messages": 4502,
+      "primary_span_count": 4504,
+      "context_span_count": 284,
+      "overlap_spans": 2,
+      "undated_message_ids": [],
+      "rejected_message_lines": [],
+      "errors": []
+    },
+    "encoded_packet_sizes_bytes": {
+      "count": 280,
+      "total": 1147746,
+      "min": 401,
+      "median": 4809.5,
+      "mean": 4099.1,
+      "p90": 6867,
+      "max": 12132
+    },
+    "primary_chars": {
+      "count": 280,
+      "total": 399365,
+      "min": 7,
+      "median": 932.5,
+      "mean": 1426.3,
+      "p90": 3676,
+      "max": 4000
+    },
+    "context_chars": {
+      "count": 280,
+      "total": 75352,
+      "min": 0,
+      "median": 8.0,
+      "mean": 269.1,
+      "p90": 801,
+      "max": 4011
+    },
+    "windows_with_context": 142,
+    "primary_chars_total": 399365,
+    "context_chars_total": 75352,
+    "context_overhead_ratio": 0.1887,
+    "extraction_system_prompt_bytes": 1024,
+    "extraction_total_wire_bytes_estimate": 1434466
+  },
+  "request_families": {
+    "extraction_base_calls": 280,
+    "organisations_packets": 1,
+    "goals_packets": 1,
+    "entity_required_targets": 424,
+    "entity_target_batch_size": 32,
+    "entity_min_target_batch_calls": 14,
+    "entity_partition_packets": "data-dependent (observation sizes unknown until pilot; packets <=100KB cap)",
+    "goals_packet_cap_bytes": 100000,
+    "organisations_packet_cap_bytes": 100000,
+    "tasks": "data-dependent: 1 interpretation call per task observation + sum of 16-candidate match batches",
+    "help_packet_cap_bytes": 60000,
+    "help_packets": 1,
+    "note": "Organisation/goal/help packets that exceed their cap end the stage incomplete; budget() recovery allowance = floor(base/5)."
+  }
+}
